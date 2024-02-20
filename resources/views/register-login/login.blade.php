@@ -3,21 +3,13 @@
 @section('content')
 <div class="font-[sans-serif]  text-white md:h-screen mt-6">
       <div class="grid md:grid-cols-2 items-center gap-8 h-full">
-    
+        <div class="max-md:order-1 p-4">
+          <img src="https://readymadeui.com/signin-image.webp" class="lg:max-w-[90%] w-full h-full object-contain block mx-auto" alt="login-image" />
+        </div>
         <div class="flex items-center md:p-8 p-6  h-full lg:w-11/12 lg:ml-auto">
           <form class="max-w-lg w-full mx-auto">
             <div class="mb-12">
-              <h3 class="text-3xl font-bold text-yellow-400">ein Konto erstellen</h3>
-            </div>
-            <div>
-              <label class="text-xs block mb-2 ">Full Name</label>
-              <div class="relative flex items-center">
-                <input name="name" type="text" required class="w-full   bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none" placeholder="Enter name" />
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2" viewBox="0 0 24 24">
-                  <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
-                  <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
-                </svg>
-              </div>
+              <h3 class="text-3xl font-bold text-yellow-400">Login</h3>
             </div>
             <div class="mt-10">
               <label class="text-xs block mb-2">Email</label>
@@ -45,17 +37,12 @@
                 </svg>
               </div>
             </div>
-            <div class="flex items-center mt-8">
-              <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 rounded" />
-              <label for="remember-me" class="ml-3 block text-sm">
-                Ich stimme den <a href="javascript:void(0);" class="text-yellow-500 font-semibold hover:underline ml-1"> Begriffe & Bedingungen</a>
-              </label>
-            </div>
+            
             <div class="mt-12">
               <button type="button" class="w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-transparent text-yellow-400 border border-yellow-400 focus:outline-none">
-                Register
+                Login
               </button>
-              <p class="text-sm mt-8">Haben Sie bereits ein Konto <a href="{{ route('login') }}" class="text-yellow-400 font-semibold hover:underline ml-1">Anmelden</a></p>
+              <p class="text-sm mt-8">Haben Sie kein Konto? <a href="{{ route('register') }}" class="text-yellow-400 font-semibold hover:underline ml-1">Anmelden</a></p>
             </div>
           </form>
         </div>
