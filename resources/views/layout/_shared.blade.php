@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OE24</title>
-    <!--Resources css and javascript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!--Resources css and javascript -->
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <!--Resources css and javascript -->
@@ -41,32 +41,32 @@
         <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
             <div class="text-md font-bold text-blue-700 lg:flex-grow">
                 <a href="#responsive-header "
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     TICKER
                 </a>
                 <a href="#responsive-header"
-                    class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     NEWS
                 </a>
                 <a href="#responsive-header"
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     POLITIC
                 </a>
                 <a href="#responsive-header "
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     VIDEOS
                 </a>
 
                 <a href="#responsive-header "
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     WETTER
                 </a>
                 <a href="#responsive-header "
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     SPORT
                 </a>
                 <a href="#responsive-header "
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     BUSINESS
                 </a>
             </div>
@@ -84,13 +84,29 @@
                 </button>
             </div>
             <div class="flex ">
+
+                @guest
+
                 <a href="{{ route('login') }}"
-                    class="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold text-white mt-4 hover:bg-blue-700 lg:mt-0">Login
+                    class="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold text-white mt-4 hover:bg-amber-500 rounded hover:text-zinc-950 lg:mt-0">Login
                 </a>
 
                 <a href="{{ route('register') }}"
-                    class=" block text-md px-4  ml-2 py-2 rounded text-blue-700 font-bold text-white mt-4 hover:bg-blue-700 lg:mt-0">Anmelden</a>
-            </div>
+                    class=" block text-md px-4  ml-2 py-2 rounded text-blue-700 font-bold text-white mt-4 hover:bg-amber-500 rounded hover:text-zinc-950 lg:mt-0">Anmelden</a>
+            @else    
+                
+       <a href="{{ route('login') }}" class="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold text-yellow-400 mt-4 hover:bg-amber-500 rounded hover:text-zinc-950 lg:mt-0"> Hello {{ Auth::user()->name }} </a>
+
+     <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class=" block text-md px-4  ml-2 py-2 rounded text-blue-700 font-bold text-yellow-400 mt-4 hover:bg-amber-500 rounded hover:text-zinc-950 lg:mt-0">Abmelden <i class="fa fa-sign-out " style="font-size:19px;color:rgb(13, 208, 192)"></i></a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                </form>
+                
+                    @endguest
+            
+            
+                </div>
+
         </div>
 
     </nav>
@@ -116,11 +132,11 @@
         <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
             <div class="text-md font-bold text-blue-700 lg:flex-grow">
                 <a href="#responsive-header "
-                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     Datenschutzerklärung
                 </a>
                 <a href="#responsive-header"
-                    class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
+                    class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     Allgemeine Nutzungsbedingungen </a>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div class="sm:flex sm:items-center sm:justify-between ">
