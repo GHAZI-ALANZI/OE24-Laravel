@@ -8,3 +8,15 @@
 /* tailwind css */
 
 /* canvas and other css */
+
+body {
+	overflow: hidden;
+  background-color: black;
+}
+
+/* Styling for the canvas */
+canvas {
+height: 13dvh;
+width: 100%;
+}
+
