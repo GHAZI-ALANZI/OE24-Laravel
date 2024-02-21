@@ -2,6 +2,9 @@
 
 @section('content')
 
+<!--##################################################################################################-->
+
+<!-- START hero section -->
 <div class="main-container">
   <div class="coverflow-container">
     <ol class="coverflow-list">
@@ -97,37 +100,29 @@
       </li>
     </ol>
   </div>
+  </div>
+<!-- END hero section -->
+
   
-</div>
-  
+<!--##################################################################################################-->
 
-    
-
-<section
-  class="relative  bg-[url(https://cdn.pixabay.com/photo/2024/01/12/13/00/field-8503934_960_720.jpg)] bg-cover bg-center bg-no-repeat main-news"
->
-  <div
-    class="absolute inset-0"
-  ></div>
-
-  <div
-    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
-  >
-    <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h1 class="text-3xl font-extrabold sm:text-5xl">
-        Let us find your
-         <div class="mt-8 flex flex-wrap gap-4 text-center">
-        <a
-          href="#"
-          class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-        >
-         Mehr &#x3e;&#x3e;
-        </a>
-
-      
+<!--START news item -->
+<div class="main-container2">
+  <div class="coverflow-container2">
+    <div class="coverflow-list2">
+      <div class="coverflow-item2">
+        <label  class="label2">
+          <figure class="album-cover2">
+            <img  class="img2"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3211/51psxBugNkL.jpg">
+            <figcaption class="album-name2">Love Is Blind</figcaption>
+          </figure>
+        </label>
       </div>
     </div>
   </div>
-</section>
+  </div>
+<!-- END news item -->
+
+<!--##################################################################################################-->
 
 @endsection
