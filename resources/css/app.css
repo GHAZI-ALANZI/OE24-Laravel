@@ -7,17 +7,22 @@
 
 /* tailwind css */
 
-/* canvas and other css */
-
-body {
-	
-  background-color: black;
-}
+/****************************************************************************************************************************/
 
 /* Styling for the canvas */
 canvas {
 height: 13dvh;
 width: 100%;
+}
+/* Styling for the canvas */
+
+/****************************************************************************************************************************/
+
+/* welcome page style*/
+
+body {
+	
+  background-color: black;
 }
 
 .main-news {
@@ -26,3 +31,103 @@ margin-left: 5%;
 width: 89dvw;
 }
 
+
+ .main-container {
+	 margin: 5vmax auto 0 auto;
+	 width: 73vmax;
+	 
+	 margin-bottom: 4vmax;
+	
+}
+ .main-container .controls {
+	 margin: 0 auto;
+	 padding: 2em 0 0 0;
+	 text-align: center;
+}
+ .coverflow-container {
+	 -webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 60%,rgba(0,0,0,0.1) 100%);
+}
+ label {
+	 color: #999;
+	 display: inline-block;
+	 padding: 10px;
+	 border: 1px solid black;
+	 cursor: pointer;
+	 
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.8px);
+-webkit-backdrop-filter: blur(9.8px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+
+	 
+	 text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+}
+ label:hover {
+	 color: #fff7f7;
+}
+ .coverflow-list {
+	 width: 100%;
+}
+ .coverflow-list .coverflow-item {
+	 display: inline-block;
+	 margin: 0 -3.5vmax;
+	 position: relative;
+	 box-shadow: 0 1px 8px rgba(1, 255, 242, 0.9);
+}
+ .coverflow-list .coverflow-item .album-cover {
+	 display: block;
+	 height: 23vmax;
+	 margin: 0;
+}
+ .coverflow-list .coverflow-item .album-cover img {
+	 height: 21vmax;
+	 width: 13vmax;
+	 opacity: 0.9;
+}
+ .coverflow-list .coverflow-item .album-name {
+	 text-align: center;
+	 display: block;
+	 color: rgb(255, 255, 255);
+}
+ .coverflow-list .coverflow-item label {
+	 padding: 0;
+	 border: none;
+	 display: block;
+	 text-shadow: none;
+}
+ .coverflow-list {
+	 transform: perspective(900px);
+	 transform-style: preserve-3d;
+	 perspective-origin: 100% 30%;
+}
+ .coverflow-list .coverflow-item {
+	 transition: all 0.4s ease;
+	 background: #212121;
+	 transform: rotateY(45deg);
+}
+ input[type="radio"] {
+	 display: none;
+}
+ input[type="radio"]:checked + .coverflow-item {
+	 transform: rotateY(0deg);
+	 margin: 0 auto;
+	 background: #313131;
+	 transition: all 0.4s ease;
+}
+ input[type="radio"]:checked + .coverflow-item img {
+	 opacity: 1;
+}
+ input[type="radio"]:checked + .coverflow-item figcaption {
+	 color: #FFFFFF;
+}
+ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
+	 transform: rotateY(-45deg);
+	 background: #515151;
+}
+ 
+/* welcome page style*/
+
+/****************************************************************************************************************************/
