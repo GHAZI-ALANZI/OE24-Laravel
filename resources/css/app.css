@@ -72,6 +72,7 @@ label:hover {
 .coverflow-list .coverflow-item {
 	display: inline-block;
 	margin: 0 -3.5vmax;
+	margin-bottom: 3vmax;
 	position: relative;
 	box-shadow: 0 1px 8px rgba(1, 255, 242, 0.9);
 }
