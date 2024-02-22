@@ -144,13 +144,6 @@ input[type="radio"]:checked+.coverflow-item~.coverflow-item {
 
 /* START MAIN NEWS CARD STYLE*/
 
-
-
-
-
-
-
-
 .card {
 
 	border-radius: 25px;
@@ -177,7 +170,7 @@ input[type="radio"]:checked+.coverflow-item~.coverflow-item {
 	/* ease-in-out */
 }
 
-p {
+.card p {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;

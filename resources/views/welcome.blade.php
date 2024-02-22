@@ -2,9 +2,23 @@
 
 @section('content')
     <!--##################################################################################################-->
+    @if (!empty($weatherData['weather'][0]['icon']))
+   <a href="#" class="flex flex-col items-center ms-[3%] shadow md:flex-row md:max-w-xl ">
+    <img class="object-cover  rounded-t-lg h-20 md:h-auto   w-[7vmax] md:rounded-none md:rounded-s-lg" src="http://openweathermap.org/img/wn/{{ $weatherData['weather'][0]['icon'] }}.png" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $weatherData['name'] }}</h5>
+        <p class="mb-3 font-normal text-white">{{ $weatherData['main']['temp'] }} °C</p>
+    </div>
+</a>
+   
+
+ @else
+        <p>No weather data available.</p>
+    @endif
 
     <!-- START hero section -->
     <div class="main-container">
+
         <div class="coverflow-container">
             <ol class="coverflow-list">
                 <!-- Cover item -->

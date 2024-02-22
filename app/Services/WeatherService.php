@@ -19,7 +19,7 @@ class WeatherService
 
     public function getWeather($city)
     {
-        $url = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=$this->apiKey";
+        $url = "https://api.openweathermap.org/data/2.5/weather?lat=48.210033&lon=16.363449&appid=$this->apiKey";
         $response = $this->client->get($url);
         return json_decode($response->getBody()->getContents(), true);
     }

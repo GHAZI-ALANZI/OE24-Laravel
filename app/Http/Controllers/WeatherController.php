@@ -18,7 +18,7 @@ class WeatherController extends Controller
     {
         $city = $request->input('city');
         $weatherData = $this->weatherService->getWeather($city);
-        return response()->json($weatherData);
+        return view('weather', ['weatherData' => $weatherData]);
     }
 }
 
