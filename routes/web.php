@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\WeatherController;
+use App\Http\Controllers\MainNewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +26,19 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/dashboard', 'dashboard')->name('dashboard');
     Route::post('/logout', 'logout')->name('logout'); 
 });
+
+Route::controller(MainNewsController::class)->group(function() {
+    Route::get('/news', 'news')->name('news');
+    Route::get('/businuss', 'businuss')->name('businuss');
+    Route::get('/gesundheit', 'gesundheit')->name('gesundheit');
+    Route::get('/politik', 'politik')->name('politik');
+    Route::get('/reise', 'reise')->name('reise');
+    Route::get('/sport', 'sport')->name('sport');
+    Route::get('/video', 'video')->name('video');
+    Route::get('/wetter', 'wetter')->name('wetter');
+
+});
+
 
 
 /* 
