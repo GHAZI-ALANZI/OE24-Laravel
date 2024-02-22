@@ -41,33 +41,33 @@
 
         <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
             <div class="text-md font-bold text-blue-700 lg:flex-grow">
-                <a href="#responsive-header "
+                <a href="{{ route('ticker') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     TICKER
                 </a>
-                <a href="#responsive-header"
+                <a href="{{ route('news') }}"
                     class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     NEWS
                 </a>
-                <a href="#responsive-header"
+                <a href="{{ route('politik') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     POLITIC
                 </a>
-                <a href="#responsive-header "
+                <a href="{{ route('video') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     VIDEOS
                 </a>
 
-                <a href="#responsive-header "
+                <a href="{{ route('wetter') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     WETTER 
 
                 </a>
-                <a href="#responsive-header "
+                <a href="{{ route('sport') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     SPORT
                 </a>
-                <a href="#responsive-header "
+                <a href="{{ route('businuss') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     BUSINESS
                 </a>

@@ -36,6 +36,7 @@ Route::controller(MainNewsController::class)->group(function() {
     Route::get('/sport', 'sport')->name('sport');
     Route::get('/video', 'video')->name('video');
     Route::get('/wetter', 'wetter')->name('wetter');
+    Route::get('/ticker', 'ticker')->name('ticker');
 
 });
 

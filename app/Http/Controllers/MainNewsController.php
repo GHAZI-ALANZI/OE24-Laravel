@@ -47,7 +47,11 @@ class MainNewsController extends Controller
             return view('main-news.wetter');
     }
     //#######################################
+         public function ticker()   {
 
+            return view('main-news.ticker');
+    }
+    //#######################################
 
 
 
