@@ -8,7 +8,7 @@
 
 @section('img')
 
-https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
+https://cdn.pixabay.com/photo/2015/12/15/09/00/success-1093891_1280.jpg
 
 @endsection
 
@@ -34,12 +34,12 @@ https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
 
                     <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                         <h1 class="text-lg">
-                            <a class="no-underline hover:underline  text-white" href="#">
+                            <a class="no-underline hover:underline font-black  text-amber-400	" href="#">
                                {{ $item['title'] }}
                             </a>
                         </h1>
                         <p class="text-white text-sm">
-                            11/1/19
+                           {{ $item['createdAt'] }}
                         </p>
                     </header>
 
@@ -47,7 +47,7 @@ https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
                         <a class="flex items-center no-underline hover:underline text-black" href="#">
 
                             <p class="ml-2 text-sm text-white">
-                                Author Name
+                               {{ $item['content'] }}
                             </p>
                         </a>
 

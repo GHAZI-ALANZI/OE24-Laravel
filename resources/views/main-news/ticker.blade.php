@@ -8,7 +8,7 @@
 var options = {
           series: [{
           name: 'Inflation',
-          data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
+          data: [30, 55, 41, 10, 78, 31.7, 32, 23, 44, 88, 80, 65]
         }],
           chart: {
           height: 350,
@@ -30,7 +30,7 @@ var options = {
           offsetY: -20,
           style: {
             fontSize: '14px',
-            colors: ["#FB1111"]
+            colors: ["#E0D21A"]
           }
         },
         
@@ -85,12 +85,13 @@ var options = {
         
         },
         title: {
-          text: 'Monthly Inflation in Argentina, 2002',
+          text: 'Monatliche Lektüre Unserer Website',
           floating: true,
           offsetY: 330,
           align: 'center',
           style: {
-            color: '#fff'
+            color: '#fff',
+            fontSize: '17px',
           }
         }
         };

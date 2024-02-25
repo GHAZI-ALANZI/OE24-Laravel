@@ -1,14 +1,14 @@
 @extends('layout._mainnews')
 
 @section('title')
-   Business 
+   Video 
 @endsection
 
 {{--###########################################################--}}
 
 @section('img')
 
-https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
+https://cdn.pixabay.com/photo/2015/12/22/08/06/face-1103708_960_720.jpg
 
 @endsection
 
@@ -20,7 +20,7 @@ https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
           
  @foreach ($data as $item)
-  @if ($item['sort']=== "Business" )
+  @if ($item['sort']=== "Video" )
             <!-- Column --> 
             <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
 
@@ -28,18 +28,17 @@ https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
                 <article class="overflow-hidden rounded-lg shadow-lg">
 
                     <a href="#">
-                        <img alt="Placeholder" class="block h-auto w-full"
-                            src="{{ $item['image'] }}">
+<iframe width="400" height="400" src="{{ $item['image'] }}" title="How prepared is the British military for war?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </a>
 
                     <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                         <h1 class="text-lg">
-                            <a class="no-underline hover:underline  text-white" href="#">
+                            <a class="no-underline hover:underline font-black  text-amber-400	" href="#">
                                {{ $item['title'] }}
                             </a>
                         </h1>
                         <p class="text-white text-sm">
-                            11/1/19
+                           {{ $item['createdAt'] }}
                         </p>
                     </header>
 
@@ -47,7 +46,7 @@ https://cdn.pixabay.com/photo/2024/02/09/16/17/grey-whale-8563340_960_720.png
                         <a class="flex items-center no-underline hover:underline text-black" href="#">
 
                             <p class="ml-2 text-sm text-white">
-                                Author Name
+                               {{ $item['content'] }}
                             </p>
                         </a>
 

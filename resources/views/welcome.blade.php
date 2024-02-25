@@ -2,7 +2,10 @@
 
 @section('content')
     <!--##################################################################################################-->
-    @if (!empty($weatherData['weather'][0]['icon']))
+
+  <!--Start Weather -->
+  
+@if (!empty($weatherData['weather'][0]['icon']))
    <a href="#" class="flex flex-col items-center ms-[3%] shadow md:flex-row md:max-w-xl ">
     <img class="object-cover  rounded-t-lg h-20 md:h-auto   w-[7vmax] md:rounded-none md:rounded-s-lg" src="http://openweathermap.org/img/wn/{{ $weatherData['weather'][0]['icon'] }}.png" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
@@ -10,11 +13,14 @@
         <p class="mb-3 font-normal text-white">{{ $weatherData['main']['temp'] }} °C</p>
     </div>
 </a>
-   
-
- @else
+   @else
         <p>No weather data available.</p>
     @endif
+
+      <!--End Weather -->
+
+          <!--##################################################################################################-->
+
 
     <!-- START hero section -->
     <div class="main-container">
@@ -46,9 +52,9 @@
     @foreach ($data as $item)
         <div class="card">
             <h1 class=" lg:text-6xl   text-center font-black	mb-2">{{ $item['title'] }}</h1>
-            <img src="{{ $item['image'] }}" alt="image" >
+            <a href="{{ route($item['sort']) }}"><img src="{{ $item['image'] }}" alt="image" >
             
-            <a href=""><p class="ms-4">{{ $item['content'] }}</p></a>
+            <p class="ms-4">{{ $item['content'] }}</p>
   </div>
   
     @endforeach

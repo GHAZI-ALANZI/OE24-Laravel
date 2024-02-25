@@ -45,29 +45,29 @@
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     TICKER
                 </a>
-                <a href="{{ route('news') }}"
+                <a href="{{ route('News') }}"
                     class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     NEWS
                 </a>
-                <a href="{{ route('politik') }}"
+                <a href="{{ route('Politik') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     POLITIC
                 </a>
-                <a href="{{ route('video') }}"
+                <a href="{{ route('Video') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     VIDEOS
                 </a>
 
-                <a href="{{ route('wetter') }}"
+                <a href="{{ route('Wetter') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     WETTER 
 
                 </a>
-                <a href="{{ route('sport') }}"
+                <a href="{{ route('Sport') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     SPORT
                 </a>
-                <a href="{{ route('businuss') }}"
+                <a href="{{ route('Business') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     BUSINESS
                 </a>
@@ -133,11 +133,11 @@
         </div>
         <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
             <div class="text-md font-bold text-blue-700 lg:flex-grow">
-                <a href="#responsive-header "
+                <a href="{{ route('Datenschutz') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     Datenschutzerklärung
                 </a>
-                <a href="#responsive-header"
+                <a href="{{ route('Allgemeine') }}"
                     class=" block mt-4 lg:inline-block lg:mt-0 text-white px-4 py-2 rounded hover:bg-amber-500 rounded hover:text-zinc-950 mr-2">
                     Allgemeine Nutzungsbedingungen </a>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
